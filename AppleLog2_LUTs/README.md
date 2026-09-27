@@ -1,29 +1,36 @@
-# Apple Log / Log2 创意 LUT（v2）
+# Apple Log / Log2 现成免费 LUT 合集
 
-**v2 修复**：去掉错误的 Rec.2020→709 矩阵（Log2 宽色域下天空易发灰红），
-高光分区染色更克制，蓝调不再把树叶子染成死青。
+全部为网上作者发布的现成 `.cube`（非自写）。版权归属原作者，仅作搬运方便下载。
 
-## 重要
+## 手机 / Blackmagic Camera 建议优先
 
-- 必须在 **Apple Log / Apple Log 2** 色彩空间下使用
-- 若摄影机已是 Rec.709 / HDR，不要套这套（会发灰、发假）
-- Blackmagic：**Display LUT 开**，**Record LUT 关**
+拍 **Apple Log 2** 时：
 
-## 风格
+1. `alessio-cinematic/AppleLog2_Cinematic.cube` — 电影感一体 LUT  
+2. `tobia-kodak-d65/AppleLog2_33x/...cube` — Kodak 2383 胶片感（33 点，适合 App 监视）  
+3. `joey-lj-fuji-gfx/FUJI-*.cube` — 富士风格（Velvia / Provia / Classic Chrome 等）  
+4. `rodrigo-polo/AppleLog2_to_Rec709_33_Grid.cube` — 干净中性转换（无风格）  
+5. `cinecolor/CINECOLOR_APPLE_LOG2_*.cube` — Log2→709 变体  
 
-| 文件 | 风格 |
-|---|---|
-| `01_Neutral_Rec709.cube` | 干净中性 Log→709，调色起点 |
-| `02_Dreamy_Soft.cube` | 梦幻柔光，轻抬阴影、轻微降饱和 |
-| `03_Blue_Mood.cube` | 蓝调情绪，阴影轻冷、天空保持干净 |
-| `04_Moonlight_Cyan.cube` | 月光青感，偏冷但不染红高光 |
-| `05_Fuji_Provia.cube` | 富士 Provia 感，清透自然 |
-| `06_Fuji_Classic_Chrome.cube` | 富士 Classic Chrome，低饱和纪实 |
-| `07_Fuji_Velvia.cube` | 富士 Velvia，浓郁但不过曝天空 |
-| `08_Teal_Orange.cube` | 轻电影青橙（比 v1 克制很多） |
-| `09_Warm_Film.cube` | 暖调胶片，日落感（高光轻暖） |
-| `10_Pastel_Dream.cube` | 粉彩梦幻，柔和低对比 |
-| `11_Bleach_Bypass.cube` | 漂白旁路，银调偏低饱和 |
-| `12_Arctic_Cold.cube` | 极地冷调，干净冰蓝 |
+## 目录与来源
 
-重新下载覆盖旧文件后再导入；手机里旧 LUT 请先删掉再导一次。
+| 目录 | 内容 | 来源 |
+|---|---|---|
+| `rodrigo-polo/` | Log2→Rec.709 转换 | [Rodrigo Polo](https://rodrigopolo.com/2025/11/04/apple-log-2-to-rec-709-conversion-lut/) |
+| `alessio-cinematic/` | Log1 / Log2 电影感 | [Alessio Gumroad](https://alessiolr.gumroad.com/l/FreeAppleLogLUT) |
+| `tobia-kodak-d65/` | Kodak 2383 D65（含 Log 与 Log2） | [Tobia / Logflow](https://logflowtools.gumroad.com/l/applelogfilmiclooksluts) |
+| `joey-lj-fuji-gfx/` | 富士 GFX 风格（Log2） | [Joey-LJ/LUTS](https://github.com/Joey-LJ/LUTS) (MIT) |
+| `cinecolor/` | Log2 A/B/C | [CineColor](https://cinecolor.io/products/apple-log2-lut) |
+| `sebastian-dylag/` | Log2 免费风格 | [Sebastian Dylag](https://sebastiandylag.com/product/apple-log-2-free-lut/) |
+
+## 用法
+
+1. 色彩空间选 **Apple Log 2**（或对应 Log）  
+2. Blackmagic Camera → 设置 → LUT → 导入对应 `.cube`  
+3. 开 **Display LUT**；建议关 **Record LUT**  
+4. 手机监视优先用 **33x** 体积小的文件  
+
+## 注意
+
+- Log 与 Log2 不要混用（看文件名 / 文件夹）  
+- 原作者条款以各自页面为准  

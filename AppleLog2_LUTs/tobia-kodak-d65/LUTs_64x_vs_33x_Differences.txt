@@ -1,0 +1,26 @@
+Understanding the Difference Between 64x64x64 LUTs and 33x33x33 LUTs
+
+When working with LUTs (Lookup Tables), the numbers "64x64x64" and "33x33x33" refer to the level of precision in the color data. Here’s a simple breakdown of the differences and how they impact your workflow:
+
+---
+
+64x64x64 LUTs
+- Higher Precision: These LUTs contain 262,144 color data points (64³), providing extremely fine gradations and smoother transitions between colors.
+- Ideal for Final Grading: Best suited for professional-grade post-production where maintaining the highest level of image fidelity is critical.
+- More Processor-Intensive: Due to their higher precision, these LUTs require more computational power and may slow down real-time previews or less powerful devices.
+
+---
+
+33x33x33 LUTs
+- Standard Precision: These LUTs contain 35,937 color data points (33³), which are more than adequate for most workflows and look development.
+- Optimized for On-Set Previews: They are less demanding on your system, making them perfect for real-time previews or quick grading on devices with limited processing power.
+- Good Balance: While slightly less precise than 64x LUTs, they still deliver excellent results in most situations.
+
+---
+
+Which Should You Use?
+- On-Set Previews or Live Workflows: Use 33x33x33 LUTs to ensure smooth performance without overloading your system.
+- Final Grading or High-End Workflows: Use 64x64x64 LUTs for the most precise and professional results when computational power is not a limitation.
+
+Both options are included in this LUT pack, so you can pick the one that fits your needs.
+If you have any questions or need further help, feel free to contact me at tobiamontanari.com!
